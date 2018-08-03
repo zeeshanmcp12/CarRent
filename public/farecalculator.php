@@ -60,15 +60,20 @@
                                     </tr> -->
                                 </div>
 
-                                
-                                <div class="form-group"><label for="">
-                                    <p>Total Duration: <input type="text" name="" class="timepicker" id="total_duration" placeholder=""></p></label>
-                                <!-- <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p> -->
+                                <!-- class="form-group" -->
+                                <!-- <label for=""> -->
+                                <div>
+                                    <tr>
+                                        <td>
+                                            Total Duration <input type="text" name="" class="timepicker form-control" id="total_duration" placeholder="HH/MM">
+                                        </td>
+                                    </tr>
+                                        <!-- <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p> -->
                                 </div>
 
                                 <div class="form-group">
-                                    <input name="subject" type="text" class="form-control" placeholder="Adcance Payment" id="" required data-validation-required-message="">
+                                        Advance Payment <input name="subject" type="text" class="form-control" placeholder="15-35%" id="" required data-validation-required-message="">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
