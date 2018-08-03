@@ -31,8 +31,8 @@
       <script>
         $( function() {
             $( "#activation_date" ).datepicker({
-                minDate: -213,
-                maxDate: "+39M +29D"
+                changeMonth: true,
+                changeYear: true
             });
             $( "#cancellation_date" ).datepicker({
                 changeMonth: true,
