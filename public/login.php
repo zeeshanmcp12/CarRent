@@ -18,10 +18,10 @@
                 </div>
 
                 <div class="form-group"><label for="">
-                    <p>License Activation Date: <input type="text" name="license_active_date" class="datepicker" id="activation_date" placeholder="2018"></p></label>
+                    <p>License Activation Date: <input type="text" name="license_active_date" class="datepicker form-control" id="activation_date" placeholder="2018"></p></label>
                 </div>
                 <div class="form-group"><label for="">
-                    <p>License Cancellation Date: <input type="text" name="license_cancel_date" class="datepicker" id="cancellation_date" placeholder="2022"></p></label>
+                    <p>License Cancellation Date: <input type="text" name="license_cancel_date" class="datepicker form-control" id="cancellation_date" placeholder="2022"></p></label>
                 </div>
 
                 <!-- <div class="form-group"><label for="">
