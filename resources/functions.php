@@ -61,7 +61,7 @@ function fetch_array($result){
 /*****************************FRONT END FUNCTIONS***********************************/
 //get products
 
-function get_products(){
+/* function get_products(){
     $query = query("SELECT * FROM products");
     confirm($query);
 
@@ -86,12 +86,12 @@ DELIMETER;
     echo $product;
 
     }
-}
+} */
 //Agar hamne massive amount of strings ko under php tag echo karana ho tu ham DELIMETER ka use karte hain so hame us string main double quotes or single quotes ko exchange karne ki zaroorat na pare.
 //Note: <<<DELIMETER k bad ko space nahi hona chahiye or na hi closing DELIMTER main koi space hona chahiye.
 //Hamne PKR k liye HTML ki entity &#8360; ko use kiya
 
-function get_categories(){
+/* function get_categories(){
     $query = query("SELECT * FROM categories");
     confirm($query);
 
@@ -107,10 +107,10 @@ DELIMETER;
 
     }
         
-}
+} */
 //square bracket main agar cat_title nahi likhenge tu categories table k cat_title se data fetch nahi hoga.
 
-function get_products_in_cat_page(){
+/* function get_products_in_cat_page(){
     $query = query("SELECT * FROM products WHERE prod_category_id = " . escape_string($_GET['id']) . " ");
     confirm($query);
 
@@ -135,11 +135,11 @@ DELIMETER;
     echo $show_product;
 
     }
-}
+} */
 //http://placehold.it/800x500
 
 
-function get_products_in_shop_page(){
+/* function get_products_in_shop_page(){
     $query = query("SELECT * FROM products");
     confirm($query);
 
@@ -164,29 +164,68 @@ DELIMETER;
     echo $show_product_in_shop_page;
 
     }
-}
+} */
 
 function login_user(){
 
     if(isset($_POST['submit'])){
-        $username = escape_string($_POST['username']);
-        $password = escape_string($_POST['password']);
+        $min_age = escape_string($_POST['age']);
+        $max_age = escape_string($_POST['age']);
+        $license_activation = escape_string($_POST['license_active_date']);
+        $license_cancellation = escape_string($_POST['license_cancel_date']);
+        $city = escape_string($_POST['city']);
+        
+        $activation_date = '01/01/2018';
+        $cancel_date = '12/31/2022';
+        $date_arr = explode('/', $activation_date, $cancel_date);
 
-        $query = query("SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}' ");
+
+        // $query = query("SELECT * FROM eligible_criteria WHERE cust_min_age = '{$min_age}' AND password = '{$password}' ");
+        $query = query("SELECT * FROM eligible_criteria");
         confirm($query);
 
-        if(mysqli_num_rows($query) == 0){
-
-            set_message("Username or Password is incorrect");
-            redirect("login.php");
+        if($min_age > 19 && $max_age < 66 && checkdate($date_arr[0], $date_arr[1] , $date_arr[2])){
+            set_message("You are Eligible");
+            redirect("farecalculator.php");
+           
+        }/* elseif ($license_activation > $_POST['license_active_date'] && $license_cancellation < $_POST['license_cancel_date']) {
+            set_message("You are Eligible");
+            redirect("farecalculator.php");
 
         }else{
 
-            set_message("Welcome to Admin {$username} " );
-            redirect("admin");
-        }
+            //set_message("You are not Eligible." );
+            echo "<h2 class='text-center bg-warning'> You are not Eligible</h2>";
+            //redirect("admin");
+        } */
+
+
     }
 }
+
+
+// {    previous query
+//     $min_age = escape_string($_POST['age']);
+//     $max_age = escape_string($_POST['age']);
+//     $license_activation = escape_string($_POST['licenseActivation']);
+//     $license_cancellation = escape_string($_POST['licenseCancellation']);
+//     $city = escape_string($_POST['city']);
+
+//     // $query = query("SELECT * FROM eligible_criteria WHERE cust_min_age = '{$min_age}' AND password = '{$password}' ");
+//     $query = query("SELECT * FROM eligible_criteria");
+//     confirm($query);
+
+//     if(mysqli_num_rows($query) == 0){
+
+//         set_message("Username or Password is incorrect");
+//         redirect("login.php");
+
+//     }else{
+
+//         set_message("Welcome to Admin {$username} " );
+//         redirect("admin");
+//     }
+// }
 
 function send_message(){
 

@@ -1,8 +1,12 @@
 <div class="col-md-3">
-<p class="lead">Cake Ordering System</p>
+<p class="lead">Car Rent System</p>
 <div class="list-group">
 
-    <?php get_categories(); ?>
+    <p><a href="login.php">Click Here</a> to check your Eligibilty.</p>
+
+    <!-- <?php get_categories(); ?> -->
+
+    
     
 <!--
 //        $query = "SELECT * FROM categories " ;

@@ -28,7 +28,8 @@
                 <div class="row">
 
                 <!--Getting the products-->
-                <?php get_products(); ?>    <!--This function is written in functions.php file-->
+                <!-- <?php get_products(); ?> -->
+                <!--This function is written in functions.php file-->
 
 
                             <!-- <div class="ratings"> Rating feature, we will be using this later on.

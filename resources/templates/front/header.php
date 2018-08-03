@@ -9,13 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Homepage - Celebration with Cake</title>
+    <title>Homepage - Car Rent System</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery.ui.timepicker" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

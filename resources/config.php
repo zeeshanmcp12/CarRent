@@ -5,7 +5,7 @@
 //Session started
 session_start();
 
-// session_destroy();
+//session_destroy();
 //This is for debugging only..agar ye on rakha tu phr har bar hamare sessions destroy hote rahenge.
 
 defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);   //ye line directory structure set kardegi, means windows main \ or linux main / so DS will be our /(forward slash) or \(backslash)
@@ -20,6 +20,11 @@ defined("DS") ? null : define("DS", DIRECTORY_SEPARATOR);   //ye line directory 
 defined("TEMPLATE_FRONT") ? null : define("TEMPLATE_FRONT", __DIR__ . DS . "templates/front");
 
 defined("TEMPLATE_BACK") ? null : define("TEMPLATE_BACK", __DIR__ . DS . "templates/back");
+
+//defined("IMAGES") ? null : define("IMAGES", __DIR__ . DS . "images");
+
+//echo IMAGES;
+
 
 // echo TEMPLATE_FRONT; //Output: D:\xampp\htdocs\cms-proj\resources\templates/front
 
