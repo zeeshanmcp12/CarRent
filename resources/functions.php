@@ -175,9 +175,9 @@ function login_user(){
         $license_cancellation = escape_string($_POST['license_cancel_date']);
         $city = escape_string($_POST['city']);
         
-        $activation_date = '01/01/2018';
-        $cancel_date = '12/31/2022';
-        $date_arr = explode('/', $activation_date, $cancel_date);
+        // $activation_date = '01/01/2018';
+        // $cancel_date = '12/31/2022';
+        // $date_arr = explode('/', $activation_date, $cancel_date);
 
 
         // $query = query("SELECT * FROM eligible_criteria WHERE cust_min_age = '{$min_age}' AND password = '{$password}' ");

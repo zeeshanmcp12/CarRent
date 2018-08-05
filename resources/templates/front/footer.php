@@ -28,7 +28,7 @@
         } );
     </script> -->
 
-      <script>
+    <!-- <script>
         $( function() {
             $( "#activation_date" ).datepicker({
                 changeMonth: true,
@@ -37,6 +37,20 @@
             $( "#cancellation_date" ).datepicker({
                 changeMonth: true,
                 changeYear: true
+            });
+        });
+
+        </script> -->
+
+      <script>
+        $( function() {
+            $( "#activation_date" ).datepicker({
+                minDate: -216,
+                maxDate: "+4M +26D"
+            });
+            $( "#cancellation_date" ).datepicker({
+                minDate: +149,
+                maxDate: "+52M +26D"
             });
         });
 
