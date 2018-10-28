@@ -1,5 +1,6 @@
 
 <!-- Configuration-->
+<<<<<<< HEAD
 <?php 
 require_once("../resources/config.php"); 
 
@@ -104,16 +105,26 @@ if(isset($_POST['submit']) &&  !empty($_POST['submit'])) {
     }
    
 ?>
+=======
+
+<?php require_once("../resources/config.php"); ?>
+
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 
 <!-- Header-->
 <?php include(TEMPLATE_FRONT .  "/header.php");?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
          <!-- Contact Section -->
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Calculate Total Fare</h2>
+<<<<<<< HEAD
                     <h3 class="section-subheading "> </h3>
                 </div>
             </div>
@@ -239,6 +250,86 @@ if(isset($_POST['submit']) &&  !empty($_POST['submit'])) {
                             </div>
                          </div>
                        </div>
+=======
+                    <h3 class="section-subheading ">
+                    <?php display_message(); ?>  <!-- Used function "display_message" to confirmation message on screen-->
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" method="post" >
+                    
+                    <!-- Contact us page function showing msg on screen-->
+                    <?php send_message(); ?>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <!-- <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div> -->
+
+                                <div class="form-group">
+                                    <tr>
+                                    <td>Cars</td>
+                                        <td><select class="form-control">
+                                        <option>Honda Civic</option>
+                                        <option>Suzuki Mega Carry</option>
+                                        <option>Hyundai Elantra</option>
+                                        <option>Toyota Vios</option>
+                                        </select></td>
+                                    </tr>
+                                </div>
+
+                                <div>
+                                    <tr>
+                                    <td>Model</td>
+                                        <td><select class="form-control">
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        </select></td>
+                                    </tr>
+                                    <!-- <tr>
+                                    <td colspan="2"><input type="submit" value="Register"/>
+                                    <input type="reset"/></td>
+                                    </tr> -->
+                                </div>
+
+                                <!-- class="form-group" -->
+                                <!-- <label for=""> -->
+                                <div>
+                                    <tr>
+                                        <td>
+                                            Total Duration <input type="text" name="" class="timepicker form-control" id="total_duration" placeholder="HH/MM">
+                                        </td>
+                                    </tr>
+                                        <!-- <input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p> -->
+                                </div>
+
+                                <div class="form-group">
+                                        Advance Payment <input name="subject" type="text" class="form-control" placeholder="15-35%" id="" required data-validation-required-message="">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button name="submit" type="submit" class="btn btn-xl">Send Message</button>
+                            </div> -->
+
+                        </div>
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
                     </form>
                 </div>
             </div>

@@ -4,7 +4,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }

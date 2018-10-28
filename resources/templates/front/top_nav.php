@@ -7,6 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
             <!--     <div id="masthead">
                 <div id="masthead-wrap">
                 <div class="sitename"><span class="wsite-logo">
@@ -37,11 +38,24 @@
                     </li> -->
                     <li>
                         <a href="our_cars.php">Our Cars</a>
+=======
+                <a class="navbar-brand" href="index.php">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="login.php">Login</a>
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
                     </li>
 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
+<<<<<<< HEAD
         <!-- /.container -->
 
+=======
+        <!-- /.container -->
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f

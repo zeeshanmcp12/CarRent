@@ -14,17 +14,23 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     
 
 
+=======
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
     <!-- Custom CSS -->
     <link href="css/shop-homepage.css" rel="stylesheet">
     <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="css/jquery.ui.timepicker" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+<<<<<<< HEAD
     <link href="css/popup-signup.css" rel="stylesheet">
+=======
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,6 +49,9 @@
         <!-- Top Navigation Here -->
         <?php include(TEMPLATE_FRONT . DS . "top_nav.php") ?>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
     </nav>

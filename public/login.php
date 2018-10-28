@@ -2,6 +2,7 @@
 
 <?php include(TEMPLATE_FRONT . DS . "header.php"); ?>
 
+<<<<<<< HEAD
 <?php 
 
         $min_ageErr = $max_ageErr = $license_activationErr = $license_cancellationErr = $cityErr = "";
@@ -71,6 +72,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ?>
 
+=======
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
     <!-- Page Content -->
     <div class="container">
 
@@ -78,6 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1 class="text-center">Login</h1>
             <!-- <h2 class="text-center bg-warning "> <?php display_message(); ?> </h2> -->
         <div class="col-sm-4 col-sm-offset-5">         
+<<<<<<< HEAD
             <form class="" action="./farecalculator" method="post" enctype="multipart/form-data">
 
                 <!-- <?php  login_user(); ?> -->
@@ -97,13 +101,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="form-group"><label for="">
                     City<input type="text" name="cust_city" class="form-control" placeholder="Lahore" 
                     value="<?php echo $city;?>"> <span class="error"><?php echo $cityErr;?></span> </label>
+=======
+            <form class="" action="" method="post" enctype="multipart/form-data">
+                    <?php  login_user(); ?>
+
+
+                <div class="form-group"><label for="">
+                    Age<input type="text" name="age" class="form-control" placeholder="19-65"></label>
+                </div>
+
+                <div class="form-group"><label for="">
+                    <p>License Activation Date: <input type="text" name="license_active_date" class="datepicker form-control" id="activation_date" placeholder="2018"></p></label>
+                </div>
+                <div class="form-group"><label for="">
+                    <p>License Cancellation Date: <input type="text" name="license_cancel_date" class="datepicker form-control" id="cancellation_date" placeholder="2022"></p></label>
+                </div>
+
+                <!-- <div class="form-group"><label for="">
+                    License Activation Date<input type="text" name="license-activation-date" class="form-control"></label>
+                </div> -->
+                <!-- <div class="form-group"><label for="">
+                    License Cancellation Date<input type="text" name="license-cancellation-date" class="form-control"></label>
+                </div> -->
+                <div class="form-group"><label for="">
+                    City<input type="text" name="city" class="form-control" placeholder="Lahore"></label>
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
                 </div>
 
                 <div class="form-group">
                   <input type="submit" name="submit" class="btn btn-primary" >
                 </div>
 
+<<<<<<< HEAD
 
+=======
+                <!-- <?php session_start(); ?> -->
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
             </form>
         </div>  
 
@@ -117,5 +150,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- /.container -->
 
 <!-- Footer Here -->
+<<<<<<< HEAD
 
 <?php include(TEMPLATE_FRONT . DS . "footer.php") ?>
+=======
+<?php include(TEMPLATE_FRONT . DS . "footer.php") ?>
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f

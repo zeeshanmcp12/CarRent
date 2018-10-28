@@ -59,16 +59,133 @@ function fetch_array($result){
 
 
 /*****************************FRONT END FUNCTIONS***********************************/
+<<<<<<< HEAD
 
+=======
+//get products
+
+/* function get_products(){
+    $query = query("SELECT * FROM products");
+    confirm($query);
+
+    while($row = fetch_array($query)){
+
+        $product = <<<DELIMETER
+        
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+            <a href="item.php?id={$row['prod_id']}"><img src="{$row['prod_image']}" alt=""></a>
+                <div class="caption">
+                    <h4 class="pull-right">&#8360;{$row['prod_price']}</h4>
+                    <h4><a href="item.php?id={$row['prod_id']}">{$row['prod_title']}</a>
+                    </h4>
+                    <p>See more snippets like this online store item at <a target="_blank" href="http://www.bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
+                    <a class="btn btn-primary" target="_blank" href="cart.php?add={$row['prod_id']}">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+DELIMETER;
+    echo $product;
+
+    }
+} */
+//Agar hamne massive amount of strings ko under php tag echo karana ho tu ham DELIMETER ka use karte hain so hame us string main double quotes or single quotes ko exchange karne ki zaroorat na pare.
+//Note: <<<DELIMETER k bad ko space nahi hona chahiye or na hi closing DELIMTER main koi space hona chahiye.
+//Hamne PKR k liye HTML ki entity &#8360; ko use kiya
+
+/* function get_categories(){
+    $query = query("SELECT * FROM categories");
+    confirm($query);
+
+    while($row = fetch_array($query)){
+
+$categories_links = <<<DELIMETER
+        
+        <a href='category.php?id={$row['cat_id']}' class='list-group-item'>{$row['cat_title']}</a>
+
+DELIMETER;
+        
+    echo $categories_links;
+
+    }
+        
+} */
+//square bracket main agar cat_title nahi likhenge tu categories table k cat_title se data fetch nahi hoga.
+
+/* function get_products_in_cat_page(){
+    $query = query("SELECT * FROM products WHERE prod_category_id = " . escape_string($_GET['id']) . " ");
+    confirm($query);
+
+    while($row = fetch_array($query)){
+
+$show_product = <<<DELIMETER
+        
+<div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{$row['prod_image']}" alt="">
+            <div class="caption">
+                <h3>{$row['prod_title']}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="item.php?id={$row['prod_id']} "id= class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+DELIMETER;
+    echo $show_product;
+
+    }
+} */
+//http://placehold.it/800x500
+
+
+/* function get_products_in_shop_page(){
+    $query = query("SELECT * FROM products");
+    confirm($query);
+
+    while($row = fetch_array($query)){
+
+$show_product_in_shop_page = <<<DELIMETER
+        
+<div class="col-md-3 col-sm-6 hero-feature">
+        <div class="thumbnail">
+            <img src="{$row['prod_image']}" alt="">
+            <div class="caption">
+                <h3>{$row['prod_title']}</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>
+                    <a href="#" class="btn btn-primary">Buy Now!</a> <a href="item.php?id={$row['prod_id']} "id= class="btn btn-default">More Info</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+DELIMETER;
+    echo $show_product_in_shop_page;
+
+    }
+} */
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 
 function login_user(){
 
     if(isset($_POST['submit'])){
+<<<<<<< HEAD
         $min_age = escape_string($_POST['cust_min_age']);
         //$max_age = escape_string($_POST['cust_max_age']);
         $license_activation = escape_string($_POST['license_active_date']);
         $license_cancellation = escape_string($_POST['license_cancel_date']);
         $city = escape_string($_POST['cust_city']);
+=======
+        $min_age = escape_string($_POST['age']);
+        $max_age = escape_string($_POST['age']);
+        $license_activation = escape_string($_POST['license_active_date']);
+        $license_cancellation = escape_string($_POST['license_cancel_date']);
+        $city = escape_string($_POST['city']);
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
         
         // $activation_date = '01/01/2018';
         // $cancel_date = '12/31/2022';
@@ -79,6 +196,7 @@ function login_user(){
         $query = query("SELECT * FROM eligible_criteria");
         confirm($query);
 
+<<<<<<< HEAD
         while ($row = fetch_array($query)) {
             // echo $row['cust_min_age'] . "\n";
             // echo $row['license_active_date'] . "\n";
@@ -102,6 +220,13 @@ function login_user(){
 
 
         /* elseif ($license_activation > $_POST['license_active_date'] && $license_cancellation < $_POST['license_cancel_date']) {
+=======
+        if($min_age > 19 && $max_age < 66 && checkdate($date_arr[0], $date_arr[1] , $date_arr[2])){
+            set_message("You are Eligible");
+            redirect("farecalculator.php");
+           
+        }/* elseif ($license_activation > $_POST['license_active_date'] && $license_cancellation < $_POST['license_cancel_date']) {
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
             set_message("You are Eligible");
             redirect("farecalculator.php");
 
@@ -140,7 +265,11 @@ function login_user(){
 //     }
 // }
 
+<<<<<<< HEAD
 /*function send_message(){
+=======
+function send_message(){
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 
     if(isset($_POST['submit'])){
 
@@ -163,7 +292,11 @@ function login_user(){
              redirect("contact.php");
         }
     }
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> a4f61e5f505e09b698a9f059d4e067cbc56f466f
 
 
 
